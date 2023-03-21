@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuts Ideas - contents made with <3 in Barcelona </title>
+    <meta name="keywords" content="animation, content, nuts ideas">
+    <meta name="description" content="Nuts Ideas - Official Website - Animation, Content & More">
+    <title>Nuts Ideas - Coming Soon</title>
     <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+        body {
+            background-color: #061110;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            img {
+                content: url('comingsoon_desktop.png');
+                max-width: 50%;
+            }
+        }
+        @media (max-width: 767px) {
+            img {
+                content: url('comingsoon_mobile.png');
+                max-width: 80%;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <img src="comingsoon.png" alt="Nuts Ideas website is coming soon">
-  </body>
+</head>
+<body>
+    <img src="comingsoon_desktop.png" alt="Coming Soon" />
+</body>
 </html>
