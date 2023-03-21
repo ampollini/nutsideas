@@ -16,31 +16,42 @@
             align-items: center;
             height: 100vh;
         }
-        img {
+        .image-container {
             max-width: 100%;
             max-height: 100%;
+            position: relative;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         @media (min-width: 768px) {
-            img {
+            .image-container img {
                 content: url('comingsoon_desktop.png');
-                max-width: 100%;
-                max-height: 100%;
-                width: 1920px;
-                height: 1080px;
+                width: 100%;
+                height: auto;
+                max-width: 1920px;
+                max-height: 1080px;
             }
         }
         @media (max-width: 767px) {
-            img {
+            .image-container img {
                 content: url('comingsoon_mobile.png');
-                max-width: 100%;
-                max-height: 100%;
-                width: 720px;
-                height: 1080px;
+                width: 100%;
+                height: auto;
+                max-width: 720px;
+                max-height: 1080px;
             }
         }
     </style>
 </head>
 <body>
-    <img src="comingsoon_desktop.png" alt="Coming Soon" />
+    <div class="image-container">
+        <img src="comingsoon_desktop.png" alt="Coming Soon" />
+    </div>
 </body>
 </html>
